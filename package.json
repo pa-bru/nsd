@@ -1,0 +1,38 @@
+{
+  "name": "docify-scripts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "nsd.js",
+  "bin": {
+    "nsd": "./bin/nsd"
+  },
+  "scripts": {
+    "test": "jest src",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "dev": "nodemon --exec babel-node -- src/nsd.js --inspect",
+    "all": "nodemon --exec npm run build",
+    "start": "babel-node -- src/nsd.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.15.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "cli-table": "^0.3.1",
+    "commander": "^2.14.1",
+    "glob": "^7.1.2",
+    "inquirer": "^5.1.0",
+    "strip-json-comments": "^2.0.1",
+    "write-json-file": "^2.3.0"
+  },
+  "nsd": {
+    "test": "YOLO MEC ",
+    "start": "coucou from start",
+    "build": "fjdkibhmdsvnjsdhvkshbhjbhj\n"
+  }
+}
